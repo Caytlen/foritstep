@@ -6,7 +6,7 @@ using namespace std;
 class QueueRing {
 	enum { ArrSize = 4 };
 	char Wait[ArrSize + 1];
-
+	int QueueLength;
 public:
 	QueueRing() : QueueLength(0){}
 	~QueueRing() { Clear(); }
@@ -28,7 +28,7 @@ void QueueRing::Add(char c) {
 		Wait[QueueLength++] = c;
 	}
 	else {
-		cout << "Error.Array is FULL" << endl;
+		cout << "Error.Array is " << endl;
 	}
 }
 
