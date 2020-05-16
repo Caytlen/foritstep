@@ -6,7 +6,7 @@ using namespace std;
 class QueueRing {
 	enum { ArrSize = 4 };
 	char Wait[ArrSize + 1];
-	int QueueLength;
+
 public:
 	QueueRing() : QueueLength(0){}
 	~QueueRing() { Clear(); }
